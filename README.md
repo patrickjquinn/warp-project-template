@@ -1,2 +1,2 @@
-# warp-vite-template
+# warp-project-template
 Basic template for new Warp projects
