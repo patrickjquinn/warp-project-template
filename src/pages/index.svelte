@@ -4,8 +4,8 @@
 </script>
 
 <main>
-    <img alt="" src={image}/>
-    <h1>Welcome to {name}!</h1>
+    <img id="img22" alt="" src={image}/>
+    <h1 id="h12343">Welcome to {name}!</h1>
 </main>
 
 <style>
