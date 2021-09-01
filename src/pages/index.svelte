@@ -3,13 +3,13 @@
     let image = "svelte_cap.png"
 </script>
 
-<div class="main">
+<main>
     <img alt="" src={image}/>
     <h1>Welcome to {name}!</h1>
-</div>
+</main>
 
 <style>
-    .main {
+    main {
         text-align: center;
         margin: 50px auto;
     }
