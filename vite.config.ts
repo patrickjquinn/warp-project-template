@@ -8,7 +8,10 @@ const preprocess = require('svelte-preprocess')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte({ preprocess: preprocess() })],
+  plugins: [svelte({ 
+    preprocess: preprocess() ,
+    disableDependencyReinclusion: ['@roxi/routify']
+  })],  
   publicDir: './assets/',
   build: {
     outDir: './public/'
