@@ -1,6 +1,6 @@
-<script>
-    let name = "your first Warp project!"
-    let image = "svelte_cap.png"
+<script lang="ts">
+    let name: string = "your first Warp project!"
+    let image: string = "svelte_cap.png"
 </script>
 
 <main>
