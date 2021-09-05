@@ -14,7 +14,13 @@
         margin: 50px auto;
     }
 
-    img {
+    #img22 {
         max-width: 100%;
+        width: 50%;
+        margin: auto;
+    }
+
+    #h12343 {
+        color: black;
     }
 </style>
