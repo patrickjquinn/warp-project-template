@@ -17,7 +17,7 @@
     "dev:android": "run-p dev:start cap-run:android",
     "#Dev: Core": "These allow the code to be developed with HMR",
     "dev:preview": "vite preview",
-    "dev:start": "run-p build:routify dev:vite",
+    "dev:start": "npm run build:routify && npm run dev:vite",
     "dev:vite": "vite --host --port 5001",
     "#Utilities": "Various utilities",
     "validate": "svelte-check"
