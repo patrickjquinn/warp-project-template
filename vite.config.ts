@@ -1,23 +1,14 @@
 import { defineConfig } from 'vite'
-import { getAliases } from 'vite-aliases'
+import { ViteAliases } from 'vite-aliases'
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 
-const aliases = getAliases();
-const preprocess = require('svelte-preprocess')
+const aliases = ViteAliases();
+// const preprocess = require('svelte-preprocess')
 
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte({ 
-    preprocess: preprocess() ,
-    disableDependencyReinclusion: ['@roxi/routify']
-  })],  
+  plugins: [svelte(), aliases],
   publicDir: './assets/',
   build: {
     outDir: './public/'
-  },
-  resolve: {
-    alias: aliases
-  },
-  optimizeDeps: { exclude: ["@roxi/routify", "@urql/svelte"] },
+  }
 })
